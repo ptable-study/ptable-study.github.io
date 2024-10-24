@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <title>Periodic Table Practice</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+        <link href="style/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="setup-screen">
+            <p class="title">Periodic Table Practice</p>
+            <div class="margin">
+                <label for="select-list">Select List:</label>
+                <select class="select-list s-option">
+                    <option value="elements1to20" selected>Elements 1-20</option>
+                    <option value="diatoms">Diatoms</option>
+                    <option value="importantElements">Important Elements</option>
+                </select>
+            </div>
+            <div class="margin">
+                <label for="select-mode">Select Mode:</label>
+                <select class="select-mode s-option">
+                    <option value="test" selected>Test</option>
+                    <option value="time" disabled>Time Trials</option>
+                </select>
+            </div>
+            <button class="btn btn-start">Start</button>
+        </div>
+
+        <p class="question-number" style="display: none;">Question 1</p>
+
+        <div class="active-screen" style="display: none;">
+            <div class="question-wrapper">
+                <p class="question"><p class="highlight"></p></p><p class="mark">?</p>
+            </div>
+            <div class="answer-wrapper">
+                <input class="input-answer" type="text" placeholder="Answer" autocomplete="off" />
+                <button class="btn btn-submit">Check</button>
+            </div>
+            <div class="check-wrapper">
+                <p class="check-info"></p>
+            </div>
+        </div>
+
+        <p class="credit">Devon Brown, 2024</p>
+        <script src="js/main.js"></script>
+    </body>
+</html>
